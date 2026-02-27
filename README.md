@@ -1,16 +1,16 @@
-# 🍎 Food Analytics Data Pipeline
+# Food Analytics Data Pipeline
 
 End-to-end data pipeline that extracts semi-structured food product data from MongoDB, processes it through Apache Spark, builds a relational analytics schema in DuckDB, and runs business intelligence queries across sales, reviews, and supplier dimensions.
 
 ---
 
-## 📋 Problem Statement
+## Problem Statement
 
 Food companies need to understand how product nutritional profiles (like NutriScore grades) relate to sales performance, customer satisfaction, and supplier reliability. The challenge: product data lives in a semi-structured NoSQL database, while sales and reviews are in flat files — requiring a pipeline that cleans, joins, and structures everything for analysis.
 
 ---
 
-## 🏗️ Architecture
+## Architecture
 
 ```
 MongoDB (raw product data)
@@ -36,7 +36,7 @@ DuckDB (relational analytics layer)
 
 ---
 
-## 📊 Star Schema Design
+## Star Schema Design
 
 ```
                     ┌──────────────┐
@@ -73,7 +73,7 @@ DuckDB (relational analytics layer)
 
 ---
 
-## 🔍 Analytical Queries
+## Analytical Queries
 
 ### Core Queries
 1. **Revenue by NutriScore** — Total revenue per nutritional grade, showing whether healthier products sell more
@@ -87,7 +87,7 @@ DuckDB (relational analytics layer)
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 | Component | Technology | Purpose |
 |-----------|-----------|---------|
@@ -99,7 +99,7 @@ DuckDB (relational analytics layer)
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 food-analytics-pipeline/
@@ -115,7 +115,7 @@ food-analytics-pipeline/
 
 ---
 
-## 🚀 How to Run
+## How to Run
 
 ### Prerequisites
 - Python 3.9+
@@ -139,7 +139,7 @@ jupyter notebook notebook.ipynb
 
 ---
 
-## 📈 Key Insights
+## Key Insights
 
 - Products with NutriScore grade **A** generated meaningful revenue despite lower volume, suggesting a premium pricing opportunity for healthier products
 - Several high-revenue products had **missing nutritional data**, flagging a data governance issue
@@ -148,7 +148,7 @@ jupyter notebook notebook.ipynb
 
 ---
 
-## 👩‍💻 Author
+## Author
 
 **Morvica Purohit** — MSc Business Analytics, UCL  
 (https://www.linkedin.com/in/morvica-purohit/) · [Email](mailto:morvicapurohit2000@gmail.com)
